@@ -1,6 +1,6 @@
 package com.grubhub.demo.service;
 
-import com.grubhub.demo.Mapper.UserMapper;
+import com.grubhub.demo.mapper.UserMapper;
 import com.grubhub.demo.dto.UserDto;
 import com.grubhub.demo.model.User;
 import com.grubhub.demo.repository.UserRepository;

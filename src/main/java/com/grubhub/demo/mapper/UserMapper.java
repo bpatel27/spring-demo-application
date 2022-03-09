@@ -1,4 +1,4 @@
-package com.grubhub.demo.Mapper;
+package com.grubhub.demo.mapper;
 
 import com.grubhub.demo.dto.UserDto;
 import com.grubhub.demo.model.User;
