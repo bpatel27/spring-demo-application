@@ -29,3 +29,6 @@ This application is just used to understad basic usage of spring to create a res
      ```bash
      curl --location --request GET 'localhost:8080/users/1'
      ```
+    
+# Data flow diagram
+![data flow](doc/data-flow.png)
