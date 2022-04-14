@@ -19,7 +19,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.List;
 
-@RunWith(SpringRunner.class)
 @WebMvcTest(UserController.class)
 class UserControllerTest {
 
@@ -30,7 +29,7 @@ class UserControllerTest {
     private UserService userService;
 
     @Test
-    void getAllUsers() throws Exception {
+    public void getAllUsers() throws Exception {
         when(userService.getAllUsers()).thenReturn(
                 List.of(new UserDto(1, "Bhavesh", "Patel"))
         );
@@ -43,7 +42,5 @@ class UserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json("[{id:1,firstName:Bhavesh,lastName:Patel}]"))
                 .andReturn();
-
-//        JSONAssert.assertEquals("expected", result.getResponse().getContentAsString(), false);
     }
 }
